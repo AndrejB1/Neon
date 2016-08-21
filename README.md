@@ -10,6 +10,4 @@ When any of the markers are clicked, the app will connect to a remote database a
 
 Several other options are available on the MapView, such as filtering out Bars or Clubs, connecting to the venue's Facebook page, or changing the date for which the user wishes to explore the venues.
 
-The second search method lets the user pick a city instead of a distance and shows a larger number of venue details, displayed in an ExpandableListView. This search method is customizable in two ways. The user can mark certain venues as 'favorites' and filter out non-favorited venues, and they can choose which details they want to be shown, ie: If they don't
-
-care about beer prices they can remove "Cheapest Beer" from the search results. These filters are contained in a DrawerLayout on the left side of the activity, and favorites can be marked using the star-shaped button to the right of every venue name.
+The second search method lets the user pick a city instead of a distance and shows a larger number of venue details, displayed in an ExpandableListView. This search method is customizable in two ways. The user can mark certain venues as 'favorites' and filter out non-favorited venues, and they can choose which details they want to be shown, ie: If they don't care about beer prices they can remove "Cheapest Beer" from the search results. These filters are contained in a DrawerLayout on the left side of the activity, and favorites can be marked using the star-shaped button to the right of every venue name.
