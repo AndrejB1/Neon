@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "75622627147",
+    "project_id": "neon-daa12"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75622627147:android:07143e07403f6de8",
+        "android_client_info": {
+          "package_name": "com.example.vagdestroyer.neon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75622627147-4ddk8uavji4mj5sh6glce9tel4789cpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vagdestroyer.neon",
+            "certificate_hash": "9F5BB71F6FC298F977DAB2ADF96B04B03045C5DB"
+          }
+        },
+        {
+          "client_id": "75622627147-onbm9a06q65gmrcvgaatfgcd3dicfs2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi2EQsszeB8Bp32C2BXolEyYjLxwgHUdw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

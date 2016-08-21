@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dip"
+    android:orientation="vertical"
+    android:id="@+id/row"
+    >
+    <!--android:background="@drawable/rect"-->
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/transparent_rec_mid"
+        android:scaleType="fitXY"
+        android:paddingTop= "10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft" />
+    <TextView
+        android:id="@+id/lowerListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/transparent_rec_mid"
+        android:scaleType="fitXY"
+        android:lineSpacingExtra="8dp"
+        android:paddingTop= "5dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:id="@+id/imageLayout"
+        android:background="@drawable/transparent_rec_mid"
+        android:scaleType="fitXY">
+        <ImageButton
+            android:id="@+id/button_facebook"
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:src="@drawable/facebook_button"/>
+
+        <ImageButton
+            android:id="@+id/button_maps"
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:src="@drawable/maps_button"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

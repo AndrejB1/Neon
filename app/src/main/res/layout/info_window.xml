@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:id="@+id/venue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="New Text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/venue_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="New Text"
+        android:id="@+id/venue_type" />
+
+    <ListView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="2dp"
+        android:id="@+id/venue_info"
+        android:layout_gravity="start" />
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    >
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#010214">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/anchor"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/anchor"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Search Filters"
+            android:background="@drawable/search_button"
+            android:id="@+id/search_filters_button"/>
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner"
+            style="@style/spinner_style"
+            android:layout_toRightOf="@id/anchor"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/venueType"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout1"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="76dp"
+                    android:background="@drawable/tab_background"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/barTab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/crowded_club">
+
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                        </ScrollView>
+                        <ExpandableListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bars"
+                            android:id="@+id/barView"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/clubTab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/crowded_club">
+
+                        <ExpandableListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Clubs"
+                            android:id="@+id/clubView"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/drawerView"
+        android:layout_height="match_parent"
+        android:layout_width="240dp"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="#ffd0d0e3">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/button_showSearchFilters"
+            android:text="Search Settings"
+            android:background="@drawable/search_settings_button"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:id="@+id/searchFilters"
+            android:orientation="vertical"
+            android:layout_width="240dp"
+            android:layout_height="300dp"
+            android:visibility="gone">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkEntryPrice"
+                android:text="Entry Price" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkOpeningHours"
+                android:text="Opening Hours" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkCheapestBeer"
+                android:text="Cheapest Beer" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkCheapestMix"
+                android:text="Cheapest Mixed Drink" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkMusic"
+                android:text="Music" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkCocktails"
+                android:text="Makes Cocktails" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chkDraught"
+                android:text="Sells Draught Beer" />
+        </LinearLayout>
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/button_showOnlyFavorites"
+            android:textOn="Show All Venues"
+            android:textOff="Show Only Favorites"
+            android:background="@drawable/search_settings_button"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

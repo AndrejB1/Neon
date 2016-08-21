@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/list_group_image"
+    android:id="@+id/venueInfo">
+
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:paddingTop="6dp"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="17dp"
+        android:textColor="#ffffff" />
+    <ToggleButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/favoriteButton"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/favorite_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:focusable="false" />
+</RelativeLayout>
