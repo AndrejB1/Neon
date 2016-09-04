@@ -1,6 +1,6 @@
 # Neon
 --------------------------------------------------------------------------------------------------------------------------------------
-IMPORTANT: All the data accessed by the app is sample data, and only certain venues in Sarajevo have been marked. The map search method eliminates certain venue markers from showing depending on their distance from the user - this means that if you are over 25km away from the nearest marked venue, the map will contain no markers. Map testing can be accomplished elsewhere in the world by simply adding new venues to the online database; This is what would be done if the app were to take off and begin to cover more cities.
+IMPORTANT: The Hostgator server containing the database for this app is no longer active. This means that the app can no longer access the information it needs to run fully (a Toast will notify the user that the app was unable to connect to the remote database).
 --------------------------------------------------------------------------------------------------------------------------------------
 How to use Neon
 
