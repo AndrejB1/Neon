@@ -1,6 +1,8 @@
 # Neon
 --------------------------------------------------------------------------------------------------------------------------------------
-IMPORTANT: The Hostgator server containing the database for this app is no longer active. This means that the app can no longer access the information it needs to run fully (a Toast will notify the user that the app was unable to connect to the remote database).
+IMPORTANT: The Hostgator server containing the database for this app is no longer active, meaning that the app's functionality is currently limited.
+
+Instead I would recommend that you view a demo of the full app in action here: https://youtu.be/lZJJGKLDIBM
 --------------------------------------------------------------------------------------------------------------------------------------
 How to use Neon
 
